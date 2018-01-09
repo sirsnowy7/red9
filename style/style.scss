@@ -49,6 +49,9 @@ p {
   margin: 0;
   padding: 0; }
 
+p + p {
+  padding-top: 1%; }
+
 h1, h2, h3 {
   font-family: $fonts-header;
   margin: 0;
@@ -74,3 +77,10 @@ a {
   padding: 0;
   margin: 0;
   color: $color-secondary; }
+
+img {
+  border-top: 2px solid $color-secondary;
+  border-bottom: 2px solid $color-secondary; 
+  width: 100%;
+  max-height: 70%;
+  margin: 1% auto; }
