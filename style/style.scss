@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Bellefair');
+
+$fonts-main:   'Arvo', serif;
+$fonts-header: 'Bellefair', serif;
+
+$color-main:      #1F1F1F;
+$color-secondary: #DC4545;
+$color-bg:        #F4F4F4;
+$color-bg-2:      #E6E6E6;
+
+body {
+  margin: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-family: $fonts-main;
+  color: $color-main;
+  background-color: $color-bg;
+  font-size: 1.2em; }
+
+@media screen and (min-width: 700px) {
+  body {
+    display: grid;
+    grid-template-columns: 61.8% 38.2% }
+  
+  main, aside {
+    grid-row: auto; }
+  
+  main {
+    grid-column: 1 / 2;
+    margin-right: 1%; }
+    
+  aside {
+    grid-column: 2 / 3;
+    margin-left: 1%; }
+    
+  header {
+    grid-column: 1 / 3; }
+}
+
+header {
+  margin-bottom: 1%; }
+
+section {
+  padding: 2%;
+  margin-bottom: 2%;
+  background-color: $color-bg-2; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3 {
+  font-family: $fonts-header;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid $color-secondary; }
+
+h1 {
+  font-size: 3.5em; }
+
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 2em; }
+
+section h1, h2, h3 {
+  margin-bottom: 1%; }
+
+hr {
+  border-color: $color-main; }
+
+a {
+  padding: 0;
+  margin: 0;
+  color: $color-secondary; }
